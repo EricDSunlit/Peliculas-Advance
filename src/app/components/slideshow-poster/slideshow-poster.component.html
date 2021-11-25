@@ -1,0 +1,11 @@
+<ion-slides >
+
+</ion-slides>
+
+<swiper [config]="slideOps">
+  <ng-template swiperSlide *ngFor="let pelicula of peliculas">
+    <ion-card (click)="mostrarDetalle( pelicula.id )">
+      <img class="poster" [src]="pelicula.poster_path | imagen">
+    </ion-card>
+  </ng-template>
+</swiper>

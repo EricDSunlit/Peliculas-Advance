@@ -1,0 +1,37 @@
+
+<ion-content>
+
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col >
+        <h3>Peliculas recientes</h3>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+<app-slidehow-backdrop [peliculas]="peliculasRecientes"></app-slidehow-backdrop>
+
+
+<ion-grid fixed>
+  <ion-row>
+    <ion-col >
+      <h3>En cartelera</h3>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+
+<app-slideshow-poster [peliculas]="peliculasRecientes"></app-slideshow-poster>
+
+
+<ion-grid fixed>
+  <ion-row>
+    <ion-col >
+      <h3>Populares</h3>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+<app-slideshow-pares [peliculas]="populares" (cargar)="cargar()"></app-slideshow-pares>
+</ion-content>
+
